@@ -1,4 +1,4 @@
-# Android Studio README
+# Android Studio Simple Applications
 
 [![Android Studio](https://img.shields.io/badge/Android%20Studio-Official%20IDE-green)](https://developer.android.com/studio)
 
