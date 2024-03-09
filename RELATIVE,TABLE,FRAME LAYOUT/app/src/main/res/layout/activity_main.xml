@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".MainActivity"
+
+
+    >
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- TableLayout -->
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="16dp">
+
+            <TableRow>
+                <TextView
+                    android:text="Name:"
+                    android:layout_column="0"
+                    android:padding="5dp"/>
+                <EditText
+                    android:id="@+id/editTextName"
+                    android:layout_column="1"
+                    android:hint="Enter your name"
+                    android:padding="5dp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Age:"
+                    android:layout_column="0"
+                    android:padding="5dp"/>
+                <EditText
+                    android:id="@+id/editTextAge"
+                    android:layout_column="1"
+                    android:hint="Enter your age"
+                    android:inputType="number"
+                    android:padding="5dp"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- FrameLayout -->
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tableLayout"
+            android:layout_marginTop="16dp">
+
+            <!-- Add FrameLayout content here -->
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
